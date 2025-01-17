@@ -8,7 +8,7 @@
     <!-- OpenGraph -->
     <meta property="og:title" content="DOOM® CAPTCHA" />
     <meta property="og:site_name" content="DOOM® CAPTCHA" />
-    <meta property="og:url" content="https://doom-captcha.vercel.app" />
+    <meta property="og:url" content="https://doom-captcha-barrels.vercel.app" />
     <meta property="og:description" content="Prove you're human by playing DOOM" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://doom-captcha.vercel.app/card.png" />
@@ -895,6 +895,7 @@ var Module = {
     logDebugMessage("Player died");
     va("event", { name: "player_death", data: { kills: enemiesKilled } });
     enemiesKilled = 0;
+    barrelsExploded = 0; 
     updateVerifyButton();
     document.querySelector(".status-message.death").classList.add("visible");
   },
