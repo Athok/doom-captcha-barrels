@@ -945,7 +945,7 @@ monitorRunDependencies: function (left) {
 };
 Module.setStatus("Downloading ...");
 window.onerror = function () {
-  Module.setStatus("Exception thrown, see JavaScript console");
+  Module.setStatus("Loading...");
   Module.setStatus = function (text) {
     if (text) Module.printErr("[post-exception status] " + text);
   };
